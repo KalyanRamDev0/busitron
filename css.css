@@ -1,0 +1,53 @@
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --accent-color-light: #007bff;
+
+    --bg-color-dark: #121212;
+    --text-color-dark: #ffffff;
+    --accent-color-dark: #bb86fc;
+
+    
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color-light);
+    --accent-color: var(--accent-color-light);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: background-color 0.3s;
+}
+
+.theme-picker {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.theme-picker label {
+    display: flex;
+    align-items: center;
+}
+
+.theme-picker input[type="color"] {
+    margin-left: 0.5rem;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
